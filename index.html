@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+
+<style>
+  /* ძირითადი სტილები */
+  button:focus + nav.hidden {
+    display: block;
+    top: 60px; /* header-ის ქვეშ გამოჩნდება */
+    width: 100%;
+  }
+  
+</style>
+
+
+
+
+
+  
+  <!-- Header -->
+  <header class="bg-green-900 text-white py-6 px-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">ArtGallery</h1>
+      <div>
+        <button id="mobile-open-button " 
+           class="text-3xl sm:hidden
+           focus:outline-none">
+              &#9776;
+        </button>
+      
+      <nav id="menu1" class=" hidden sm:block">
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <!--  Section 1 -->
+  <section class="bg-white py-12">
+    <div class="container mx-auto px-4 text-center text-green-900">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Our Art Gallery!</h2>
+      <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Proin et neque non sapien semper tempus. Quisque eget dapibus urna. Suspendisse dignissim 
+        sem non magna varius, at pretium erat tincidunt. Suspendisse sit amet nulla
+        venenatis, consequat nisl eu, lacinia nunc. Etiam sollicitudin justo quis
+        neque fermentum maximus. Sed commodo sagittis turpis. Nulla ac efficitur
+        neque. Phasellus id pretium elit, et efficitur dolor. Fusce cursus vitae
+        nulla eget luctus.</p>
+      <button class="bg-green-800 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-600">Get Started</button>
+    </div>
+  </section>
+
+  <!--  Section 2 -->
+  
+  <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-8 text-green-950">
+    <div class="text-bg-black p-4">
+      <h1 class="text-2xl  font-bold">YOUR DAY AT THE GALLERY</h1><br>
+      <p class="text-sm md:text-md ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Proin et neque non sapien semper tempus. Quisque eget dapibus urna. 
+         Suspendisse dignissim 
+         sem non magna varius, at pretium erat tincidunt. Suspendisse sit amet nulla
+          venenatis.Quisque eget dapibus urna. 
+      </p>
+    </div>
+    <div class="p-4">
+      <img src="./images/img1.png" class="h-56 w-full">
+    </div>
+    <div class="p-4">
+      <img src="./images/img2.png" class="h-56 w-full">
+    </div>  
+    <div class="p-4">
+      <img src="./images/img3.png" class="h-56 w-full">
+    </div>   
+  </section>
+
+  <!-- section-3 -->
+  <section class="py-12 bg-gray-100 text-green-950 px-4">
+      <h1 class="text-4xl font-bold text-green-900 text-center mb-8">Masterpieces and Their Admirers</h1>
+    <div class="grid  sm:grid-cols-1 md:grid-cols-3 gap-8  text-green-950 text-center px-8">
+        <!--  1 -->
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <div class="p-4">
+            <img src="./images/img4.jpg" class="h-54 w-full">
+            </div>
+          <h4 class="text-xl font-bold mb-2">The First Encounter with Art</h4>
+          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur
+             adipiscing elit. Proin et neque non sapien semper tempus.</p>
+        </div>
+        <!--  2 -->
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <div class="p-4">
+            <img src="./images/img5.jpg" class="h-54 w-full">
+          </div>
+          <h4 class="text-xl font-bold mb-2">The First Encounter with Art</h4>
+          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Proin et neque non sapien semper tempus.</p>
+        </div>
+        <!-- 3 -->
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <div class="p-4">
+            <img src="./images/img-6.jpg" class="h-54 w-full">
+          </div>
+          <h4 class="text-xl font-bold mb-2">The First Encounter with Art</h4>
+          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Proin et neque non sapien semper tempus.</p>
+        </div>
+    </div>
+   
+  </section>
+  <!--------section-4 -->
+
+  <section class="grid grid-cols-1 gap-8 mb-8 p-8 lg:grid-cols-[1fr_1.5fr_1fr]">
+    <div class="m-4"> <img src="./images/img7.jpg" class="h-56 w-full"></div>
+    <div class=" m-4"><img src="./images/img8.png" class="h-56 w-full"></div>
+    <div class=" m-4"> <img src="./images/img9.jpg" class="h-56 w-full"></div>
+  </section>
+  
+  <!-- Footer -->
+  
+  <footer class="bg-green-950 text-gray-300 p-8 mt-6">
+   <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <h2 class="text-lg font-bold mb-4">About Us</h2>
+      <p>We provide the best services for our clients worldwide.</p>
+    </div>
+    <div>
+      <h2 class="text-lg font-bold mb-4">Quick Links</h2>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Services</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-lg font-bold mb-4">Contact</h2>
+      <p>Phone: +123 456 7890</p>
+      <p>Email: info@example.com</p>
+    </div>
+    </div>
+  </footer>
+
+</body>
+</html>
